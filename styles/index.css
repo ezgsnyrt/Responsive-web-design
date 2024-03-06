@@ -9,6 +9,7 @@ body{
 
 .wrapper{
     width: 60%;
+    margin: 7.5% 20% 0 20%;
 }
 
 .wrapper__content{
@@ -82,6 +83,19 @@ li a{
     text-decoration: none;
 }
 
+.container__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__content__card{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -99,4 +113,16 @@ h1{
     font-size: 22px;
     line-height: 33px;
     color: #242634;
+    text-align: center;
+}
+
+.container__content-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+img{
+    width: 100%;
 }

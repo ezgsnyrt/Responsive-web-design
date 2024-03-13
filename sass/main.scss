@@ -1,0 +1,81 @@
+@use 'fonts';
+@import "../node_modules/normalize-scss/sass/normalize";
+@import 'header/header';
+@import 'image';
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.wrapper{
+    width: 60%;
+    height: 100%;
+    margin: auto 20%;
+
+    &__content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+// content other than header starts here
+.container__content{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 0 5% 0;
+    
+        &-info p{
+            font-family: fonts.$link_font-family;            
+            font-weight: fonts.$logo_font-weight;  
+            font-style: fonts.$link_font-style;
+            font-size: fonts.$para_font-size;  
+            line-height: fonts.$para_line-height;
+            color: fonts.$logo_colors; 
+            font-optical-sizing: fonts.$para_font-optical-sizing;
+            text-align: center;
+        }
+    }
+}
+
+h1{
+    font-family: fonts.$head_font-family;
+    font-weight: fonts.$head_font-weight;
+    font-style: fonts.$link_font-style;
+    font-size: fonts.$head_font-size;
+    line-height: fonts.$head_line-height;
+    color: fonts.$logo_colors; 
+    margin: 0;
+}
+
+span{
+    display: block;
+}
+
+// @media screen and (min-width:320px) and (max-width:767px){
+    
+// }
+
+// @media screen and (min-width: 768px) and (max-width: 1439px){
+
+// }
+
+// @media screen and (min-width: 1440px) and (max-width: 1920px){
+
+// }

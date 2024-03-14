@@ -1,8 +1,9 @@
 @use 'fonts';
 @import "../node_modules/normalize-scss/sass/normalize";
+@import 'mixins';
 @import 'header/header';
 @import 'image';
-@import 'mixins';
+
 
 *{
     box-sizing: border-box;
@@ -12,15 +13,6 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
-        // @include responsive(mobile) {
-        //     .logo p{
-        //         font-family: fonts.$logo-small_font-family;
-        //         font-weight: fonts.$logo-small_font-weight;  
-        //         font-size: fonts.$logo_font-size;  
-        //         line-height: fonts.$logo_line-height;
-        //         color: fonts.$logo_colors;
-        //     }
-        // }
 }
 
 .wrapper{
@@ -35,7 +27,6 @@ body{
         flex-direction: column;
     }
 }
-
 
 // content other than header starts here
 .container__content{
@@ -60,6 +51,14 @@ body{
             color: fonts.$logo_colors; 
             font-optical-sizing: fonts.$para_font-optical-sizing;
             text-align: center;
+            
+            @media only screen and (min-width:320px) and (max-width:767px) {
+                font-family: fonts.$link_font-family;
+                font-weight: fonts.$logo_font-weight;
+                font-size: fonts.$para_mobile_font-size;
+                line-height: fonts.$para_mobile_line-height;
+            }
+
         }
     }
 }
@@ -72,20 +71,20 @@ h1{
     line-height: fonts.$head_line-height;
     color: fonts.$logo_colors; 
     margin: 0;
+
+    @media only screen and (min-width:320px) and (max-width:767px) {
+    font-weight: fonts.$head_font-weight;
+    font-size: fonts.$head_mobile_font-size;
+    line-height: fonts.$head_mobile_line-height;
+    }
 }
 
 span{
     display: block;
+
+    @media only screen and (min-width:320px) and (max-width:767px) {
+        display:inline;
+    }
+
 }
 
-// @media screen and (min-width:320px) and (max-width:767px){
-    
-// }
-
-// @media screen and (min-width: 768px) and (max-width: 1439px){
-
-// }
-
-// @media screen and (min-width: 1440px) and (max-width: 1920px){
-
-// }

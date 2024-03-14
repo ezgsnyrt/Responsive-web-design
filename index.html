@@ -41,7 +41,12 @@
                     </div>
                 </div>
                 <div class="container__content-image">
-                    <img class="image" src="images/img-large.jpg" alt="horses in the nature">
+                    <picture>
+                        <source media="(min-width:320px) and (max-width:767px)" srcset="../images/img-small.jpg">
+                        <source media="(min-width:768px) and (max-width:1439px)" srcset="../images/img-middle.jpg">
+                        <source media="(min-width:1440px)" srcset="../images/img-large.jpg">
+                        <img src="images/img-large.jpg" alt="horses in the nature">
+                    </picture>
                 </div>
             </div>
         </div>

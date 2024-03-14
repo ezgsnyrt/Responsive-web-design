@@ -2,6 +2,7 @@
 @import "../node_modules/normalize-scss/sass/normalize";
 @import 'header/header';
 @import 'image';
+@import 'mixins';
 
 *{
     box-sizing: border-box;
@@ -11,6 +12,15 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
+        // @include responsive(mobile) {
+        //     .logo p{
+        //         font-family: fonts.$logo-small_font-family;
+        //         font-weight: fonts.$logo-small_font-weight;  
+        //         font-size: fonts.$logo_font-size;  
+        //         line-height: fonts.$logo_line-height;
+        //         color: fonts.$logo_colors;
+        //     }
+        // }
 }
 
 .wrapper{

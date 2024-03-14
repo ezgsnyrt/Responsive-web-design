@@ -59,6 +59,10 @@ body{
                 line-height: fonts.$para_mobile_line-height;
             }
 
+            @media only screen and (min-width:768px) and (max-width:1439px){
+                font-family: fonts.$para_font-size; 
+                line-height: fonts.$para_line-height; 
+            }
         }
     }
 }
@@ -76,6 +80,10 @@ h1{
     font-weight: fonts.$head_font-weight;
     font-size: fonts.$head_mobile_font-size;
     line-height: fonts.$head_mobile_line-height;
+    }
+
+    @media only screen and (min-width:768px) and (max-width:1439px){
+    font-size: fonts.$head_tablet_font-size;
     }
 }
 

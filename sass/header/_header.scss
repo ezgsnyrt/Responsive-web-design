@@ -18,7 +18,7 @@
 }
 
 .nav-link{
-    width: 25%;
+    width: 30%;
     display: flex;
     justify-content: space-between;
 
@@ -55,6 +55,14 @@
         line-height: fonts.$logo_line-height;
         color: fonts.$logo_colors;
     }
+
+    @media only screen and (min-width:768px) and (max-width:1439px) {
+        font-family: fonts.$logo-small_font-family;
+        font-weight: fonts.$logo-small_font-weight;  
+        font-size: fonts.$logo_font-size;  
+        line-height: fonts.$logo_line-height;
+        color: fonts.$logo_colors;
+    }
 }
 
 ul{
@@ -80,10 +88,15 @@ li{
     @include responsive-less-than (mobile) {
         display: none;
     }
+
+    @media only screen and (min-width:768px) and (max-width:1439px){
+        padding-left: 7%;
+    }
 }
 
 .fa-ellipsis{
     cursor: pointer;
+    
     @include responsive-greater-than (mobile) {
         display: none;
     }

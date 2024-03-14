@@ -18,7 +18,7 @@
 }
 
 .nav-link {
-  width: 25%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
 }
@@ -53,6 +53,15 @@
     color: #242634;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .logo p {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    color: #242634;
+  }
+}
 
 ul {
   list-style: none;
@@ -76,6 +85,11 @@ li a {
 @media only screen and (max-width: 767px) {
   li {
     display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  li {
+    padding-left: 7%;
   }
 }
 
@@ -153,6 +167,12 @@ body {
     line-height: 18px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .container__content .card-info p {
+    font-family: 22px;
+    line-height: 33px;
+  }
+}
 
 h1 {
   font-family: "Poppins", sans-serif;
@@ -168,6 +188,11 @@ h1 {
     font-weight: 500;
     font-size: 36px;
     line-height: 39.6px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  h1 {
+    font-size: 72px;
   }
 }
 
